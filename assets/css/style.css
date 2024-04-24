@@ -20,6 +20,9 @@
 
 .hover-up:hover {
     bottom: 8px;
+    rotate: 7deg;
+    transform: scale(1.1);
+
 }
 
 .nav-pills .nav-link.active {
@@ -189,8 +192,13 @@ h6 {
     font-weight: 700;
 }
 
+p, blockquote, li{
+    font-size: 16px;
+    font-weight: 600;
+}
+
 nav {
-    background-color: #ffffffef;
+    background-color: #ffffffc7;
     box-shadow: var(--box-shadow);
 
     & .navbar-nav {
@@ -220,6 +228,7 @@ nav {
 
         & img {
             width: 90px;
+            margin-bottom: -50px;
         }
     }
 }
@@ -234,7 +243,36 @@ main {
         background-color: var(--bg-color);
     }
 
-    & .about {
+    & .about-section {
+        background-image: url('../img/1_en_hk_1684460445_copy.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        & h2{
+            position: relative;
+            z-index: 1;
+        }
+
+        & p{
+            position: relative;
+            z-index: 1;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
         .container-1024 {
             max-width: 1024px;
             margin: 0 auto;
@@ -263,6 +301,11 @@ main {
     & .solutions {
 
         & .container {
+
+            & .img{
+                display: flex;
+                justify-content: center;
+            }
 
             & .img img {
                 width: 400px;
@@ -309,13 +352,13 @@ main {
 
 .banner {
     position: relative;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     & img{
-        height: 70vh;
+        height: 100vh;
         object-fit: cover;
     }
 
@@ -392,11 +435,13 @@ main {
 
         & .card-header {
             border: none;
-            background-color: #fff;
+            background-color: var(--secondary-color);
         }
     }
 
     & .card-body {
+        min-height: 300px;
+        padding-top: 30px;
 
         & .body-wrapper {
             display: none;
@@ -419,6 +464,8 @@ footer {
     padding: 100px 0 20px;
 
     & .row {
+        display: flex;
+        align-items: end;
 
         & .col-4 {
             padding: 0 30px;
@@ -465,6 +512,14 @@ main {
         color: var(--button-color);
         position: relative;
         z-index: 1;
+    }
+
+    .button{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
     }
 
     & .sub-page {

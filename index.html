@@ -19,85 +19,126 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/img/128.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="hover-up nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="hover-up nav-link" href="./about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="hover-up nav-link" href="./services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="hover-up nav-link" href="./work-with-us.html">Work With Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="hover-up nav-link" href="./our-clients.html">Our Clients</a></a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="hover-up nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="hover-up nav-link" href="./about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="hover-up nav-link" href="./services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="hover-up nav-link" href="./work-with-us.html">Work With Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="hover-up nav-link" href="./our-clients.html">Our Clients</a></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main id="main">
         <section class="main-ban">
-                <div id="carouselExampleCaptions" class="banner carousel slide" data-bs-ride="false">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div data-bs-interval="5000" class="carousel-item active">
+            <div id="carouselExampleCaptions" class="banner carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div data-bs-interval="5000" class="carousel-item active">
                         <img src="./assets/img/cardboard-box-389935_1920.jpg" class="d-block w-100" alt="img">
                         <div class="carousel-caption d-none d-md-block">
-                        <p>WE LOVE TO</p>
-                        <h1>Quality <span>COMPANY_NAME</span></h1>
+                            <p>WE LOVE TO</p>
+                            <h1>Quality <span>COMPANY_NAME</span></h1>
                         </div>
-                      </div>
-                      <div data-bs-interval="5000" class="carousel-item">
+                    </div>
+                    <div data-bs-interval="5000" class="carousel-item">
                         <img src="./assets/img/space-5933930_1920.jpg" class="d-block w-100" alt="img">
                         <div class="carousel-caption d-none d-md-block">
                             <p>WE LOVE TO</p>
                             <h1>The Best <span>Solutions For Great Clients</span></h1>
                         </div>
-                      </div>
-                      <div data-bs-interval="5000" class="carousel-item">
+                    </div>
+                    <div data-bs-interval="5000" class="carousel-item">
                         <img src="./assets/img/transport-3369756_1920.jpg" class="d-block w-100" alt="img">
                         <div class="carousel-caption d-none d-md-block">
                             <p>WE LOVE TO</p>
                             <h1>Smart <span>And Elegant Solution Needs</span></h1>
                         </div>
-                      </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
-        <section class="brown about">
+        <section class="solutions">
+            <div class="container">
+                <h2 class="text-center mb-5">More Than Solutions</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="img">
+                            <img class="hover-up" src="./assets/img/track-your-parcel2.jpg" alt="img" />
+                        </div>
+                        <h4>
+                            Track Your Package Anywhere
+                        </h4>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="img">
+                            <img class="hover-up" src="./assets/img/how-write-address-package-B-1174695-Q421.avif"
+                                alt="img" />
+                        </div>
+                        <h4>
+                            Private Shipping Address
+                        </h4>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="img">
+                            <img class="hover-up" src="./assets/img/Guide to Shipping for Your Online Store.webp"
+                                alt="img" />
+                        </div>
+                        <h4>
+                            From Many Stores To One Shipment
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-section">
             <div class="container-1024">
                 <div class="row">
-                    <div class="col-lg-7 col-md-7 col-sm-12 img-col"><img class="hover-up"
-                            src="./assets/img/53f9facce868c3c1725dc7cdc7bb96c5.avif" alt="about"></div>
-                    <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
                         <h2 class="mb-5">About Us</h2>
                         <p>
                             Allow us to present a smart and elegant solution to all
@@ -118,42 +159,9 @@
                         </p>
                     </div>
                 </div>
-            </div>
+        </div>
         </section>
-        <section class="solutions">
-            <div class="container">
-                <h2 class="text-center mb-5">More Than Solutions</h2>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="img">
-                            <img class="hover-up" src="./assets/img/track-your-parcel2.jpg" alt="img" />
-                        </div>
-                        <h4>
-                            Track Your Package Anywhere
-                        </h4>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="img">
-                            <img class="hover-up" src="./assets/img/how-write-address-package-B-1174695-Q421.avif"
-                                alt="img" />
-                        </div>
-                        <h4>
-                            Private Shipping Address
-                        </h4>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="img">
-                            <img class="hover-up" src="./assets/img/Guide to Shipping for Your Online Store.webp"
-                                alt="img" />
-                        </div>
-                        <h4>
-                            From Many Stores To One Shipment
-                        </h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="brown">
+        <section>
             <div class="container">
                 <h2 class="text-center mb-5">Testimonials</h2>
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -229,53 +237,59 @@
         </section>
         <section class="pricing-section">
             <div class="container">
-                <div class="wrap">
-                    <h2 class="text-center mb-5">Pricing</h2>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="price-card card text-center">
-                                <div class="card-header">
-                                    <ul class="nav nav-pills card-header-pills">
-                                        <li class="nav-item">
-                                            <a id="nav-1" class="nav-link nav-tab nav-regular active"
-                                                href="#">Regular</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a id="nav-2" class="nav-link nav-tab nav-regular" href="#">Plus</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a id="nav-3" class="nav-link nav-tab nav-regular" href="#">Super Plus</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card-body card-regular">
-                                    <div class="body-wrapper active" id="body-1">
-                                        <h3 class="card-title">$149/month</h3>
-                                        <p class="card-text">
-                                            This service plan is ideal for customers, who can't afford the time to stay
-                                            at home waiting for their shipment.
-                                        </p>
-                                        <a href="#contact_us_form" class="hover-up btn btn-primary">Select Plan</a>
-                                    </div>
-                                    <div class="body-wrapper" id="body-2">
-                                        <h3 class="card-title">$299/month</h3>
-                                        <p class="card-text">
-                                            All that is included in the previous plan plus insurance against any damage
-                                            and in any case.
-                                        </p>
-                                        <a href="#contact_us_form" class="hover-up btn btn-primary">Select Plan</a>
-                                    </div>
-                                    <div class="body-wrapper" id="body-3">
-                                        <h3 class="card-title">$399/month</h3>
-                                        <p class="card-text">
-                                            In case you need to purchase something no one else should know about.
-                                        </p>
-                                        <a href="#contact_us_form" class="hover-up btn btn-primary">Select Plan</a>
-                                    </div>
+                <h2 class="mb-5 text-center">Pricing</h2>
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="price-card card text-center">
+                            <div class="card-header">
+                                <h4 class="mt-4 mb-4">Regular</h4>
+                            </div>
+                            <div class="card-body card-regular">
+                                <div class="body-wrapper active" id="body-1">
+                                    <h3 class="card-title">$149/month</h3>
+                                    <p class="card-text">
+                                        This service plan is ideal for customers, who can't afford the time to stay
+                                        at home waiting for their shipment.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4">
+                        <div class="price-card card text-center">
+                            <div class="card-header">
+                                <h4 class="mt-4 mb-4">Plus</h4>
+                            </div>
+                            <div class="card-body card-regular">
+                                <div class="body-wrapper active" id="body-2">
+                                    <h3 class="card-title">$299/month</h3>
+                                    <p class="card-text">
+                                        All that is included in the previous plan plus insurance against any damage
+                                        and in any case.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="price-card card text-center">
+                            <div class="card-header">
+                                <h4 class="mt-4 mb-4">Super Plus</h4>
+                            </div>
+                            <div class="card-body card-regular">
+                                <div class="body-wrapper active" id="body-3">
+                                    <h3 class="card-title">$399/month</h3>
+                                    <p class="card-text">
+                                        In case you need to purchase something no one else should know about.<br><bR>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="#contact_us_form" class="hover-up btn btn-primary">Select Plan</a>
                 </div>
             </div>
         </section>
@@ -288,7 +302,7 @@
                         <img src="./assets/img/128.png" alt="logo">
                     </a>
                     <div class="contact">
-                        <address>
+                        <address class='mt-5'>
                             <p>COMPANY_ADDRESS</p>
                         </address>
                         <ul class="info">
@@ -316,43 +330,16 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <ul class="testimonial mt-5">
-                        <li>
-                            <p>
-                                <a href="#"><b>COMPANY_NAME:</b><br></a>
-                                <span>
-                                    Allow us to present a smart and elegant solution to
-                                    all your logistics needs that will only take a
-                                    couple minutes of your time.
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a href="#"><b>COMPANY_NAME:</b><br></a>
-                                <span>
-                                    Hundreds of clients receive their merchandize
-                                    daily, however every interaction is unique.
-                                </span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a href="#"><b>COMPANY_NAME:</b><br></a>
-                                <span>
-                                    We believe that clarity is a vital part of
-                                    interaction with a customer, thus we make every
-                                    effort to present complex logistic issues in the
-                                    most coherent fashion.
-                                </span>
-                            </p>
-                        </li>
+                    <ul class="sub-nav mt-5">
+                        <li><a href="./prohibited.html">Prohibited Items</a></li>
+                        <li><a href="./terms.html">Terms & Conditions</a></li>
+                        <li><a href="./countries.html">Countries</a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="col-6">
                     <div class="form-container">
                         <form id="contact_us_form" enctype="multipart/form-data">
-                            <h3 class="mb-3">We will love to hear from you!</h3>
                             <div class="mb-3">
                                 <div class="row g-2">
                                     <div class="col-md">
@@ -369,7 +356,7 @@
                                 <textarea name="message" required class="form-control" rows="9" cols="39"
                                     placeholder="Your Message*"></textarea>
                             </div>
-                            <div class="mb-3">
+                            <div class="">
                                 <input id="submit" class="hover-up btn btn-primary mb-3" type="submit"
                                     value="Send Message" />
                             </div>
@@ -377,16 +364,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row bottom mt-5">
-                <div class="copyright col-6">
+            <div class=" mt-5">
                     <span class="copyright">Copyright &copy; COMPANY_NAME LLC 2024. All rights reserved.</span>
-                </div>
-                <ul class="sub-nav col-6 d-flex gap-5 justify-content-end">
-                    <li><a href="./prohibited.html">Prohibited Items</a></li>
-                    <li><a href="./terms.html">Terms & Conditions</a></li>
-                    <li><a href="./countries.html">Countries</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                </ul>
             </div>
         </div>
     </footer>
