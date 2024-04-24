@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const banner = document.querySelector('.banner');
+    // const banner = document.querySelector('.banner');
 
-    function handleScroll() {
-        let scrollPosition = window.scrollY;
+    // function handleScroll() {
+    //     let scrollPosition = window.scrollY;
 
-        if (scrollPosition > 0) {
-            banner.style.filter = 'blur(' + (scrollPosition / 60) + 'px)';
-        } else {
-            banner.style.filter = 'blur(0)';
-        }
-    }
+    //     if (scrollPosition > 0) {
+    //         banner.style.filter = 'blur(' + (scrollPosition / 60) + 'px)';
+    //     } else {
+    //         banner.style.filter = 'blur(0)';
+    //     }
+    // }
 
-    window.addEventListener('scroll', handleScroll);
+    // window.addEventListener('scroll', handleScroll);
 
 
     function handleTabSwitching(tabs, bodies) {
