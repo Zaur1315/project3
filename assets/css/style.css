@@ -1,0 +1,581 @@
+:root {
+    --primary-color: #258c05;
+    --secondary-color: #928272;
+    --text-color: #1a3037;
+    --button-color: #ffd700;
+    --button-hover: #00bfff;
+    --bg-color: #ece4db;
+    --box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.01);
+}
+
+.nav-pills .nav-link {
+    color: var(--button-hover);
+}
+
+.hover-up {
+    position: relative;
+    bottom: 0;
+    transition: all 600ms;
+}
+
+.hover-up:hover {
+    bottom: 8px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--button-color);
+    border: none;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.btn-primary {
+    background-color: var(--button-color);
+    border: none;
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 8px 16px;
+
+    &:hover {
+        background-color: var(--button-hover);
+    }
+}
+
+input {
+    padding: 8px 16px;
+}
+
+li {
+    list-style: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+    overflow-x: 0 !important;
+    line-height: 1.7 !important;
+
+    & h1 {
+
+        & span {
+            color: var(--button-color)
+        }
+    }
+
+    & h2 {
+        font-size: 48px;
+        color: var(--primary-color);
+    }
+
+    & h3 {
+        font-size: 36px;
+        color: var(--text-color);
+    }
+
+    & h4 {
+        font-size: 24px;
+        color: var(--text-color);
+    }
+
+    & p,
+    span {
+        color: var(--text-color);
+    }
+
+    & a {
+        color: var(--button-hover);
+        text-decoration: none;
+
+        & :hover {
+            color: var(--button-color);
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-weight: 700;
+}
+
+nav {
+    background-color: #ffffffef;
+    box-shadow: var(--box-shadow);
+
+    & .navbar-nav {
+        justify-content: end;
+        margin-left: auto !important;
+        margin-right: 0 !important;
+        gap: 30px;
+
+        & .nav-link {
+            color: var(--text-color);
+
+            &.active {
+                color: var(--primary-color);
+                font-weight: 700;
+            }
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    & .navbar-brand {
+        padding: 0 !important;
+        margin: 0;
+        display: flex;
+
+        & img {
+            width: 90px;
+        }
+    }
+}
+
+main {
+
+    &.sub-page {
+        height: 60vh;
+    }
+
+    & .brown {
+        background-color: var(--bg-color);
+    }
+
+    & .about {
+        .container-1024 {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 100px 0;
+
+            & .col-5 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        & .img-col {
+            display: flex;
+
+            & img {
+                width: 500px;
+                height: 500px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: var(--box-shadow);
+            }
+        }
+    }
+
+    & .solutions {
+
+        & .container {
+
+            & .img img {
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin: 20px 0;
+                box-shadow: var(--box-shadow);
+            }
+
+            h4 {
+                text-align: center;
+            }
+        }
+    }
+
+    & .container {
+        padding: 100px 0;
+
+        & .wrap {
+            max-width: 512px;
+            margin: 0 auto;
+        }
+
+        & .carousel {
+            padding: 0 150px 70px 150px;
+        }
+    }
+
+}
+
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/AdobeStock_188341948-edited-scaled.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(0);
+    transition: filter 0.5s ease;
+
+    & .wrap {
+        height: 100%;
+
+        & h1 {
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            font-size: 96px;
+            margin-top: 24px;
+        }
+
+        & .sub-header {
+            color: var(--primary-color);
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
+            font-size: 24px;
+            margin-left: auto;
+            width: 100%;
+        }
+    }
+
+
+}
+
+& .pricing-section {
+    background-image: url('../img/automatic\ tracking-hero-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+
+    }
+
+    h2 {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.container {
+
+    & .price-card {
+        border: none;
+        background-color: #ffffffef;
+        box-shadow: var(--box-shadow);
+        z-index: 1;
+
+        & .card-header {
+            border: none;
+            background-color: #fff;
+        }
+    }
+
+    & .card-body {
+
+        & .body-wrapper {
+            display: none;
+            transition: all 500ms;
+
+            & .card-text {
+                margin: 20px 0;
+            }
+        }
+
+        & .active {
+            display: block;
+            padding: 20px;
+        }
+    }
+}
+
+footer {
+    background-color: var(--bg-color);
+    padding: 100px 0 20px;
+
+    & .row {
+
+        & .col-4 {
+            padding: 0 30px;
+        }
+
+        & .col-3 {
+            padding-right: 30px;
+        }
+    }
+
+    & address {
+        margin-bottom: 10px;
+    }
+
+    .bottom {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+
+        & .copyright,
+        a {
+            font-size: 14px;
+        }
+
+        & .copyright {
+            color: var(--bg-color);
+        }
+
+        & a {
+            color: var(--button-color);
+        }
+    }
+
+    & .form-container {
+        padding-left: 35px;
+    }
+}
+
+main {
+
+    & .banner-text h5 {
+        color: var(--button-color);
+        position: relative;
+        z-index: 1;
+    }
+
+    & .sub-page {
+        min-height: 70vh;
+    }
+
+    & .page-proh {
+        background-image: url('../img/WorkWave-How-to-Add-a-Delivery-Service-For-Your-Business.jpg');
+    }
+
+    & .page-about {
+        background-image: url('../img/final-mile-delivery-scaled-1.jpeg');
+    }
+
+    & .page-term {
+        background-image: url('../img/term.webp');
+    }
+
+    & .page-country {
+        background-image: url('../img/World-Country-Map-scaled.jpg');
+    }
+
+    & .page-faq {
+        background-image: url('../img/faq-schema-63b70abfc3906-sej-1280x720.webp');
+    }
+
+    & .page-services {
+        background-image: url('../img/package-delivery-companies.jpg');
+    }
+
+    & .page-client {
+        background-image: url('../img/delivery-banner.jpg');
+    }
+
+    & .page-work {
+        background-image: url('../img/641b8b4b1782863716530053_app-for-delivery-routes-hero.webp');
+    }
+
+    & .container-768 {
+        max-width: 768px;
+        margin: 0 auto;
+
+        & img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: var(--box-shadow);
+        }
+    }
+}
+
+
+@media (max-width: 769px) {
+    main {
+        & .about {
+            & .img-col {
+                & img {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+        }
+
+        & .solutions {
+            & .container {
+                & .img img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+.disabled {
+    background: grey !important;
+}
+
+@media (max-width: 586px) {
+    .banner {
+        & .wrap {
+            & h1 {
+                font-size: 56px;
+            }
+        }
+    }
+
+    .about h2 {
+        margin-top: 50px;
+    }
+
+    .solutions .col-sm-4 .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    footer {
+        & .row {
+
+            & .col-3,
+            .col-6 {
+                width: 100%;
+            }
+
+            & h3 {
+                margin-top: 20px;
+            }
+
+            & .form-container {
+                padding: 0;
+            }
+        }
+    }
+
+    main {
+        & .container {
+            & .carousel {
+                padding: 0 20px 70px 20px;
+            }
+        }
+    }
+}
