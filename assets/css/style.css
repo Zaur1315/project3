@@ -19,8 +19,8 @@
 }
 
 .hover-up:hover {
-    bottom: 8px;
-    rotate: 7deg;
+    bottom: 3px;
+    rotate: 5deg;
     transform: scale(1.1);
 
 }
@@ -35,6 +35,7 @@
 .btn-primary {
     background-color: var(--button-color);
     border: none;
+    border-radius: 0;
     color: var(--text-color);
     font-weight: 700;
     padding: 8px 16px;
@@ -44,13 +45,32 @@
     }
 }
 
+.navbar-toggler{
+    border: none !important;
+    border-radius: 0 !important;
+}
+
 input {
     padding: 8px 16px;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+textarea{
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+select{
+    border-radius: 0 !important;
+    border: none !important;
 }
 
 li {
     list-style: none;
 }
+
+
 
 html,
 body,
@@ -173,7 +193,7 @@ body {
     }
 
     & a {
-        color: var(--button-hover);
+        color: var(--secondary-color);
         text-decoration: none;
 
         & :hover {
@@ -197,6 +217,30 @@ p, blockquote, li{
     font-weight: 600;
 }
 
+.accordion-button{
+    background-color: var(--primary-color) !important;
+    border: none;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.accordion-item{
+    border-radius: 0;
+    border:  0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-button{
+    border-radius: 0 !important;
+}
+
+.accordion-item:first-of-type .accordion-button{
+    border-radius: 0;
+}
+
 nav {
     background-color: #ffffffc7;
     box-shadow: var(--box-shadow);
@@ -206,6 +250,7 @@ nav {
         margin-left: auto !important;
         margin-right: 0 !important;
         gap: 30px;
+        padding: 0 20px;
 
         & .nav-link {
             color: var(--text-color);
@@ -233,6 +278,10 @@ nav {
     }
 }
 
+.pink-bg{
+    background-color: var(--secondary-color) !important;
+}
+
 main {
 
     &.sub-page {
@@ -241,6 +290,16 @@ main {
 
     & .brown {
         background-color: var(--bg-color);
+    }
+
+    & .interaction{
+        & .card-body{
+            background-color: var(--secondary-color);
+        }
+
+        & .card-header{
+            background-color: var(--button-color) !important;
+        }
     }
 
     & .about-section {
@@ -289,14 +348,19 @@ main {
             display: flex;
 
             & img {
-                width: 500px;
+                width: 700px;
                 height: 500px;
                 object-fit: cover;
-                border-radius: 50%;
+                border-radius: 0;
                 box-shadow: var(--box-shadow);
             }
         }
     }
+
+    & .interaction{
+
+    }
+
 
     & .solutions {
 
@@ -305,14 +369,18 @@ main {
             & .img{
                 display: flex;
                 justify-content: center;
+
+            }
+
+            .row{
+                margin-bottom: 100px;
             }
 
             & .img img {
-                width: 400px;
-                height: 400px;
+                width: 600px;
+                height: 300px;
                 object-fit: cover;
-                border-radius: 50%;
-                margin: 20px 0;
+                border-radius: 0;
                 box-shadow: var(--box-shadow);
             }
 
@@ -432,10 +500,12 @@ main {
         background-color: #ffffffef;
         box-shadow: var(--box-shadow);
         z-index: 1;
+        border-radius: 0;
 
         & .card-header {
             border: none;
             background-color: var(--secondary-color);
+            border-radius: 0;
         }
     }
 
@@ -462,6 +532,7 @@ main {
 footer {
     background-color: var(--bg-color);
     padding: 100px 0 20px;
+
 
     & .row {
         display: flex;
@@ -506,6 +577,10 @@ footer {
     }
 }
 
+.more-solution {
+    margin-bottom: 0 !important;
+}
+
 main {
 
     & .banner-text h5 {
@@ -527,35 +602,59 @@ main {
     }
 
     & .page-proh {
-        background-image: url('../img/WorkWave-How-to-Add-a-Delivery-Service-For-Your-Business.jpg');
+        background-image: url('../img/proh.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     & .page-about {
-        background-image: url('../img/final-mile-delivery-scaled-1.jpeg');
+        background-image: url('../img/about.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     & .page-term {
-        background-image: url('../img/term.webp');
+        background-image: url('../img/terms.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     & .page-country {
-        background-image: url('../img/World-Country-Map-scaled.jpg');
+        background-image: url('../img/country.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     & .page-faq {
-        background-image: url('../img/faq-schema-63b70abfc3906-sej-1280x720.webp');
+        background-image: url('../img/faq.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     & .page-services {
-        background-image: url('../img/package-delivery-companies.jpg');
+        background-image: url('../img/services.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     & .page-client {
-        background-image: url('../img/delivery-banner.jpg');
+        background-image: url('../img/clients.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     & .page-work {
-        background-image: url('../img/641b8b4b1782863716530053_app-for-delivery-routes-hero.webp');
+        background-image: url('../img/work.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
     & .container-768 {
@@ -573,7 +672,7 @@ main {
 }
 
 
-@media (max-width: 769px) {
+@media (max-width: 992px) {
     main {
         & .about {
             & .img-col {
@@ -583,16 +682,31 @@ main {
                 }
             }
         }
+    }
 
+    main {
         & .solutions {
             & .container {
-                & .img img {
-                    width: 200px;
-                    height: 200px;
+                h4 {
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                }
+
+                & .mt-5{
+                    margin: 0 !important;
                 }
             }
         }
     }
+
+    .more-solution .img{
+
+        .col-lg-12 h4, .col-lg-6 h4{
+            margin-top: 20px !important;
+        }
+    }
+
+
 }
 
 .disabled {
